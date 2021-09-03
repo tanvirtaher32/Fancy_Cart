@@ -112,7 +112,7 @@ document.getElementById('checkOut').addEventListener('click',function(e) {
  // total
  let total = document.getElementById('total');
  let totalValue = parseInt(total.innerText).toFixed(2);
- let totalValueChange = subTotalValueChange - taxValue;
+ let totalValueChange = subTotalValueChange + taxValue;
  total.innerHTML = totalValueChange.toFixed(2);
  console.log(totalValueChange);
 
